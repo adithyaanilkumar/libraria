@@ -10,9 +10,10 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 
-
-
-
 @app.route('/heartbeat')
 def hear_beat():
     return "Hello From the other side."
+
+
+if __name__ == '__main__':
+    app.run()
